@@ -1,0 +1,20 @@
+/*----------------logo----------- */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--part-title-color);
+}
+
+.logo__part {
+    color: var(--accent-text-color);
+}
+
+.header-logo-link:focus {
+    color: var(--accent-text-color);
+}
+
+.navigation__logo{
+    margin-right: 93px;
+}

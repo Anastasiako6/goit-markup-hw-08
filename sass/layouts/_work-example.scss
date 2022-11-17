@@ -1,0 +1,33 @@
+
+.work-example {
+    padding-top: 0;
+}
+
+.example {
+    display: flex;
+    gap: 30px;
+}
+
+.padding-title {
+    margin-bottom: 50px;
+}
+
+.example__item {
+    position: relative;
+}
+
+.apps {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+    background: rgba(47, 48, 58, 0.8);
+}
