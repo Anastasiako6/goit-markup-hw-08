@@ -25,10 +25,6 @@
     }
 }
 
-// .members-item:not(:last-child) {
-//     margin-right: 30px;
-// }
-
 
 
 .section-members {
@@ -45,31 +41,7 @@
     color: var(--title-text-color);
 }
 
-.example-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-/* надпись на фото */
-.example-item {
-    position: relative;
-}
-
-.apps {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    padding-top: 27px;
-    padding-bottom: 27px;
-
-    font-weight: 700;
-    line-height: 1.14;
-    text-align: center;
-    text-transform: uppercase;
-
-    color: var(--primary-white-color);
-    background: rgba(47, 48, 58, 0.8);
-}
-
+// icons 
 .section-members-list {
     display: flex;
     justify-content: center;
