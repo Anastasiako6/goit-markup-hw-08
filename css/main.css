@@ -443,14 +443,29 @@ body {
     padding-bottom: 200px;
   }
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi-mob-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi-tab.jpg);
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi-tab-2x.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi-2x.jpg);
   }
 }
 
@@ -964,22 +979,21 @@ body {
 
 .portfolio-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.portfolio-item:not(:last-child) {
-  margin-right: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 8px;
 }
 
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .portf-cards {
-  width: 370px;
+  width: 450px;
   background: var(--primary-white-color);
   border: 1px solid #EEEEEE;
   transition: transform 250ms var(--cubic);

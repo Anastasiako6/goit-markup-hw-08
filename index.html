@@ -204,7 +204,24 @@
                 <h2 class="section-title members padding-title">Наша команда</h2>
                 <ul class="members-list list">
                     <li class="members-item">
-                        <img class="members-photo" src="./images/team_card_1.jpg" alt="Фото Ігор Дем'яненко" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/team_card_1.jpg 1x, 
+                            ./images/team_card_1-2x.jpg 2x"
+                            media="(min-width: 1200px)"/>
+                            <source 
+                            srcset="./images/team_card_1-tab.jpg 1x, 
+                                    ./images/team_card_1-tab-2x.jpg 2x" 
+                            media="(min-width: 768px)"/>
+                            <source 
+                            srcset="./images/team_card_1-mob.jpg 1x, 
+                                    ./images/team_card_1-mob-2x.jpg 2x" 
+                            media="(max-width: 768px)" />
+
+                            <img 
+                                class="members-photo" 
+                                src="./images/team_card_1.jpg"
+                                alt="Фото Ігор Дем'яненко" width="450" height="260">
+                        </picture>
                         <div class="members-card">
                             <h3 class="section-members-name">Ігор Дем'яненко</h3>
                             <p class="section-members-job">Product Designer</p>
@@ -246,7 +263,19 @@
                     </li>
 
                     <li class="members-item">
-                        <img class="members-photo" src="./images/team_card_2.jpg" alt="Фото Ольга Рєпіна" width="270" height="260">
+                        <picture>
+                            <source srcset="
+                            ./images/team_card_2.jpg 1x, 
+                            ./images/team_card_2-2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="
+                            ./images/team_card_2-tab.jpg 1x, 
+                            ./images/team_card_2-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="
+                            ./images/team_card_2-mob.jpg 1x, 
+                            ./images/team_card_2-mob-2x.jpg 2x" media="(max-width: 768px)" />
+
+                            <img class="members-photo" src="./images/team_card_2.jpg" alt="Фото Ольга Рєпіна" width="450" height="260">
+                        </picture>
                         <div class="members-card">
                             <h3 class="section-members-name">Ольга Рєпіна</h3>
                             <p class="section-members-job">Fronted Developer</p>
@@ -288,7 +317,19 @@
                     </li>
 
                     <li class="members-item">
-                        <img class="members-photo" src="./images/team_card_3.jpg" alt="Фото Микола Тарасов" width="270" height="260">
+                        <picture>
+                            <source srcset="
+                            ./images/team_card_3.jpg 1x, 
+                            ./images/team_card_3-2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="
+                            ./images/team_card_3-tab.jpg 1x, 
+                            ./images/team_card_3-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="
+                            ./images/team_card_3-mob.jpg 1x, 
+                            ./images/team_card_3-mob-2x.jpg 2x" media="(max-width: 768px)" />
+                        
+                            <img class="members-photo" src="./images/team_card_3.jpg" alt="Фото Микола Тарасов" width="450" height="260">
+                        </picture>
                         <div class="members-card">
                             <h3 class="section-members-name">Микола Тарасов</h3>
                             <p class="section-members-job">Marketing</p>
@@ -330,9 +371,21 @@
                     </li>
 
                     <li class="members-item">
-                        <img class="members-photo" src="./images/team_card_4.jpg" alt="Фото Михайло Єрмаков" width="270" height="260">
+                        <picture>
+                            <source srcset="
+                                ./images/team_card_4.jpg 1x, 
+                                ./images/team_card_4-2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/team_card_4-tab.jpg 1x, 
+                                ./images/team_card_4-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/team_card_4-mob.jpg 1x, 
+                                ./images/team_card_4-mob-2x.jpg 2x" media="(max-width: 768px)" />
+                        
+                            <img class="members-photo" src="./images/team_card_4.jpg" alt="Фото Михайло Єрмаков" width="450" height="260">
+                        </picture>
                         <div class="members-card">
-                            <h3 class="section-members-name">Микола Тарасов</h3>
+                            <h3 class="section-members-name">Михайло Єрмаков</h3>
                             <p class="section-members-job">UI Designer</p>
                             <ul class="section-members-list list">
                                 <li class="section-members-item">
