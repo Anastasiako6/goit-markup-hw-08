@@ -5,6 +5,7 @@
 .header__cont {
     display: flex;
     align-items: center;
+    position: relative;
 }
 /* -----------nav----------- */
 .nav {
@@ -13,7 +14,7 @@
 }
 
 .menu {
-    display: flex;
+    display: none;
     gap: 50px;
 
     & .link.current {
@@ -38,25 +39,10 @@
     }
 }
 
-.current {
-    &::after {
-        position: absolute;
-        bottom: 0;
-    
-        content: '';
-        display: block;
-        width: 100%;
-        height: 4px;
-    
-        background: var(--accent-text-color);
-        border-radius: 2px;
-    }
-}
-
-/* ----------communicatuion-list-------- */
+// mob-menu
 
 .communication {
-    display: flex;
+    display: none;
     margin-left: auto;
     gap: 50px;
 }
@@ -84,3 +70,97 @@
     margin-right: 10px;
     fill: currentColor;
 }
+
+.mob-menu {
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.menu-open{
+    margin-left: auto;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 22px 8px;
+    transition: fill 250ms var(--cubic);
+}
+
+.menu-open:hover{
+    fill: var(--accent-text-color);
+}
+
+.mob-menu-list{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    & .link{
+    color: #212121;
+    }
+}
+
+.mob-menu__link:hover, .mob-communication__item:hover{
+    color: var(--accent-text-color);
+}
+.mob-menu__item:not(:last-child){
+    margin-bottom: 32px;
+}
+
+.mob-communication{
+    margin-bottom: 64px;
+}
+
+.mob-communication__item{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    letter-spacing: 0.02em;
+    
+    color: var(--primary-text-color);
+}
+
+.mob-soc{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mob-soc-item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-text-color);
+}
+
+.mob-soc-item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, .2);
+}
+
+.menu-cont{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.menu-close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 8px;
+}
+.menu-close:hover {
+    fill: var(--accent-text-color);
+}
+
