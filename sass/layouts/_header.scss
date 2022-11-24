@@ -11,6 +11,10 @@
 .nav {
     display: flex;
     align-items: center;
+    @media screen and (min-width: 768px){
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 
 .menu {
@@ -20,6 +24,9 @@
     & .link.current {
         color: var(--accent-text-color);
         position: relative;
+    }
+    @media screen and (min-width: 768px){
+        display: flex;
     }
 }
 
@@ -39,12 +46,41 @@
     }
 }
 
+.current {
+    &::after {
+        position: absolute;
+        bottom: 0;
+
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+
+        background: var(--accent-text-color);
+        border-radius: 2px;
+    }
+}
+
 // mob-menu
 
 .communication {
     display: none;
     margin-left: auto;
     gap: 50px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: auto;
+        gap: 50px;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    @media screen and (min-width: 1200px){
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
 }
 
 
@@ -64,11 +100,19 @@
     &:focus {
     color: var(--accent-text-color);
     }
+    @media screen and (min-width: 768px){
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 .communication__icons {
     margin-right: 10px;
     fill: currentColor;
+    @media screen and (min-width: 1200px){
+        width: 16px;
+        height: 12px;
+    }
 }
 
 .mob-menu {
@@ -88,6 +132,9 @@
     background-color: rgba(0, 0, 0, 0);
     padding: 22px 8px;
     transition: fill 250ms var(--cubic);
+    @media screen and (min-width: 768px){
+        display: none;
+    }
 }
 
 .menu-open:hover{

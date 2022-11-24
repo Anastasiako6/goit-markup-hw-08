@@ -127,7 +127,7 @@ body {
 }
 
 .modal {
-  width: 100%;
+  width: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -138,14 +138,26 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   margin-bottom: 12px;
+  width: 370px;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+    width: 100%;
+  }
 }
 
 .modal-field {
@@ -233,13 +245,27 @@ body {
 .check {
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+}
+@media screen and (min-width: 1200px) {
+  .check {
+    margin-bottom: 30px;
+  }
 }
 
 .check-text {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .check-text span {
@@ -372,6 +398,12 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .nav {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
 .menu {
   display: none;
@@ -380,6 +412,11 @@ body {
 .menu .link.current {
   color: var(--accent-text-color);
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
 }
 
 .menu__link {
@@ -395,10 +432,39 @@ body {
   color: var(--accent-text-color);
 }
 
+.current::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-text-color);
+  border-radius: 2px;
+}
+
 .communication {
   display: none;
   margin-left: auto;
   gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .communication {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .communication {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
 }
 
 .communication__item {
@@ -415,10 +481,22 @@ body {
 .communication__item:hover, .communication__item:focus {
   color: var(--accent-text-color);
 }
+@media screen and (min-width: 768px) {
+  .communication__item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 
 .communication__icons {
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .communication__icons {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .mob-menu {
@@ -438,6 +516,11 @@ body {
   background-color: rgba(0, 0, 0, 0);
   padding: 22px 8px;
   transition: fill 250ms var(--cubic);
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .menu-open:hover {
@@ -769,7 +852,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  /* color: var(--title-text-color); */
+  color: var(--title-text-color);
 }
 
 .section-members-job {
