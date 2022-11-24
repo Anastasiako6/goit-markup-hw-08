@@ -177,16 +177,18 @@
 }
 
 .input-footer-wrap {
-    display: flex;
+    display: flex;@media screen and (min-width: 480px) {
+        flex-direction: column;
+    }
+   
+}
+.form-wrap{
     @media screen and (min-width: 480px) {
         display: flex;
         flex-direction: column;
         gap: 20px;
         align-items: center;
     }
-   
-}
-.form-wrap{
     @media screen and (min-width: 1200px) {
         display: flex;
         flex-direction: row;
