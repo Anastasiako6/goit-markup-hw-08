@@ -114,6 +114,12 @@
         height: 12px;
     }
 }
+.icon-tel{
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+    }
+}
 
 .mob-menu {
     width: 100vw;
