@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студія</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -25,7 +25,7 @@
                 <a class="logo navigation__logo link" href="./index.html"><span class="logo__part">Web</span>Studio</a>
                 <ul class="menu list">
                     <li class="menu__item link">
-                        <a class="menu__link link  current" href="./index.html"> Студія</a>
+                        <a class="menu__link link current" href="./index.html"> Студія</a>
                     </li>
                     <li class="menu__item link">
                         <a class="menu__link link" href="./portfolio.html"> Портфоліо</a>
@@ -45,48 +45,48 @@
                             <use class="icon" href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
-            <button type="button" class="menu-open js-open-menu" >
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu" >
                 <svg class="menu-icon-open" width="40" height="40">
                     <use class="icon" href="./images/icons.svg#icon-menu-mob"></use>
                 </svg>
             </button>
-            <div class="mob-menu is-hidden js-menu-container">
-                <button type="button" class="menu-close js-close-menu">
-                    <svg class="menu-icon-slose" width="40" height="40">
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button type="button" class="menu-toggle js-close-menu">
+                    <svg class="menu-icon-close" width="40" height="40">
                         <use class="icon" href="./images/icons.svg#icon-cross"></use>
                     </svg>
                 </button>
-                <div class="menu-cont">
-                    <div class="menu-top">
-                        <ul class="mob-menu-list list">
-                            <li class="mob-menu__item link">
-                                <a class="mob-menu__link link  current" href="./index.html"> Студія</a>
-                            </li>
-                            <li class="mob-menu__item link">
-                                <a class="mob-menu__link link" href="./portfolio.html"> Портфоліо</a>
-                            </li>
-                            <li class="mob-menu__item link">
-                                <a class="mob-menu__link link" href="Контакти"> Контакти</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="menu-bottom">
-                        <ul class="mob-communication list">
-                            <li class="mob-menu__item"><a class="mob-communication__item link"
-                                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                            <li class="mob-menu__item"><a class="mob-communication__item link" href="tel:+380961111111">+38 096 111 11
-                                    11</a></li>
-                        </ul>
-                    
-                        <ul class="mob-soc list">
-                            <li class="mob-soc-item "><a href="" class="mob-soc-link link"></a>Instagram</li>
-                            <li class="mob-soc-item"><a href="" class="mob-soc-link link"></a>Twitter</li>
-                            <li class="mob-soc-item"><a href="" class="mob-soc-link link"></a>Facebook</li>
-                            <li class="mob-soc-item"><a href="" class="mob-soc-link link"></a>LinkedIn</li>
-                        </ul>
-                    </div>
+                <div class="menu-top">
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu__item link">
+                            <a class="mob-menu__link link  mob-menu__link--current" href="./index.html"> Студія</a>
+                        </li>
+                        <li class="mob-menu__item link">
+                            <a class="mob-menu__link link" href="./portfolio.html"> Портфоліо</a>
+                        </li>
+                        <li class="mob-menu__item link">
+                            <a class="mob-menu__link link" href="Контакти"> Контакти</a>
+                        </li>
+                    </ul>
                 </div>
+                <div class="menu-bottom">
+                    <ul class="mob-communication list">
+                        <li class="mob-menu__item"><a class="mob-communication__item link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="mob-menu__item"><a class="mob-communication__item link" href="tel:+380961111111">+38 096 111 11
+                             11</a></li>
+                    </ul>
+            
+                    <ul class="mob-soc list">
+                        <li class="mob-soc-item "><a href="" class="mob-soc-link link"></a>Instagram</li>
+                        <li class="mob-soc-item"><a href="" class="mob-soc-link link"></a>Twitter</li>
+                        <li class="mob-soc-item"><a href="" class="mob-soc-link link"></a>Facebook</li>
+                        <li class="mob-soc-item"><a href="" class="mob-soc-link link"></a>LinkedIn</li>
+                    </ul>
+                </div>   
             </div>
+        </div>
     </header>
 
 
@@ -591,8 +591,11 @@
             </div>
         </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
 </body>
 
 </html>
