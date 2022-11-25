@@ -23,8 +23,14 @@
 
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @media screen and (min-width: 480px){
+        font-size: 24px;
+        line-height: 1.16;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: 26px;
+        line-height: 1.19;
+    }
     color: var(--primary-white-color);
 
     transition: color 250ms var(--cubic);
@@ -372,6 +378,10 @@
 
 .mob-menu__link:hover,
 .mob-communication__item:hover {
+    color: var(--accent-text-color);
+}
+.mob-menu__link:focus,
+.mob-communication__item:focus {
     color: var(--accent-text-color);
 }
 
