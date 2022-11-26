@@ -6,25 +6,24 @@
     display: flex;
     align-items: center;
     position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+    height: 60px;
+    @media screen and (min-width: 768px) {
+        height: 80px;
+    }
+
 }
 /* -----------nav----------- */
 .nav {
     display: flex;
     align-items: center;
-    @media screen and (min-width: 768px){
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
 }
 
 .menu {
     display: none;
     gap: 50px;
-
-    & .link.current {
-        color: var(--accent-text-color);
-        position: relative;
-    }
     @media screen and (min-width: 768px){
         display: flex;
     }
@@ -51,22 +50,28 @@
 .communication {
     display: none;
     margin-left: auto;
-    gap: 50px;
     @media screen and (min-width: 768px) {
         display: flex;
         margin-left: auto;
-        gap: 50px;
+        font-size: 12px;
+        line-height: 1.6;
+        gap: 10px;
         flex-direction: column;
         gap: 10px;
         padding-top: 21px;
         padding-bottom: 21px;
+        padding-right: 15px;
     }
     @media screen and (min-width: 1200px){
         display: flex;
         flex-direction: row;
         gap: 40px;
+        font-size: 14px;
+        line-height: 1.16;
+        padding: 0;
     }
 }
+
 
 
 .communication__item {
@@ -110,10 +115,9 @@
     margin-left: auto;
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    padding: 22px 8px;
+    padding: 10px 15px;
     transition: fill 250ms var(--cubic);
     background-color: transparent;
-    margin: 10px 0 10px auto;
     transform: translateX(0%);
     transition: fill 250ms var(--cubic);
     
@@ -234,6 +238,7 @@
     transition: transform 250ms var(--cubic);
     z-index: 1;
 }
+
 .menu-container.is-open {
     transform: translateX(0);
 }
@@ -252,6 +257,7 @@
         fill: var(--accent-text-color);
     }
 }
+
 @media screen and (min-width: 768px) {
     .current{
         &::after{
@@ -268,3 +274,57 @@
         }
     }
 }
+
+// mob-menu
+
+
+.communication__item {
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+
+    transition: color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    @media screen and (min-width: 1200px){
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+.communication__icons {
+    margin-right: 10px;
+    fill: currentColor;
+
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+.icon-tel {
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+    }
+}
+
+
+
+
+
+
