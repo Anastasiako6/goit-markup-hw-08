@@ -21,8 +21,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    width: 100%;
     @media screen and (min-width: 768px){
         .portf-cards{
             width: calc((100% - 30px) / 2);
@@ -116,7 +117,6 @@
 
 .portf-top-text {
     position: absolute;
-    width: 402px;
     top: 0;
     height: 100%;
     padding: 77px 24px;

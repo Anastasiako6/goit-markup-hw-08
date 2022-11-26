@@ -552,6 +552,10 @@ body {
   margin-bottom: 64px;
 }
 
+.mob-communication__item--tel {
+  color: var(--accent-text-color);
+}
+
 .mob-communication__item {
   font-weight: 500;
   font-size: 34px;
@@ -1383,8 +1387,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .portfolio-cards .portf-cards {
@@ -1473,7 +1478,6 @@ body {
 
 .portf-top-text {
   position: absolute;
-  width: 402px;
   top: 0;
   height: 100%;
   padding: 77px 24px;
