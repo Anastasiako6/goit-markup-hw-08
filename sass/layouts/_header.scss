@@ -152,22 +152,20 @@
 
 .mob-communication{
     margin-bottom: 64px;
-}
-.mob-communication__item--tel{
-    color: var(--accent-text-color);
-}
-.mob-communication__item{
     font-weight: 500;
-    font-size: 34px;
-    line-height: calc(40 / 34);
     letter-spacing: 0.02em;
-    
-    color: var(--primary-text-color);
 }
 
-.mob-communication__mail{
+.mob-communication--tel{
+    font-size: 34px;
+    line-height: calc(40 / 34);
+
+    color: var(--accent-text-color);
+}
+.mob-communication--mail{
     font-size: 24px;
     line-height: calc(28 / 24);
+    color: var(--primary-text-color);
 }
 
 .mob-menu__link--current {
