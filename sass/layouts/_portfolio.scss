@@ -3,16 +3,19 @@
     flex-wrap: wrap;
     margin-bottom: 40px;
     gap: 8px;
-    @media screen and (min-width: 768px){
+
+    @media screen and (min-width: 768px) {
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
     }
-    @media screen and (min-width: 1200px){
-        .section{
+
+    @media screen and (min-width: 1200px) {
+        .section {
             padding-top: 94px;
             padding-bottom: 94px;
         }
+
         margin-bottom: 50px;
     }
 }
@@ -22,13 +25,15 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    justify-content: left;
     align-items: center;
-    width: 100%;
-    @media screen and (min-width: 768px){
-        .portf-cards{
+
+    @media screen and (min-width: 768px) {
+        .portf-cards {
             width: calc((100% - 30px) / 2);
         }
     }
+
     @media screen and (min-width: 1200px) {
         .portf-cards {
             width: calc((100% - 60px) / 3);
@@ -38,7 +43,7 @@
 
 
 .portf-cards {
-    max-width: 450px;
+    display: flex;
     background: var(--primary-white-color);
     border: 1px solid #EEEEEE;
     transition: transform 250ms var(--cubic);
@@ -60,7 +65,11 @@
 }
 
 .portf-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow 250ms var(--cubic);
+    flex-grow: 1;
 }
 
 .portf-link:hover,
@@ -118,6 +127,7 @@
 .portf-top-text {
     position: absolute;
     top: 0;
+    padding: 63px 24px;
     height: 100%;
     padding: 77px 24px;
     transform: translateY(100%);
@@ -131,11 +141,13 @@
 
     color: var(--primary-white-color);
     background: rgba(33, 150, 243, 0.9);
-    @media screen and (min-width: 768px){
+
+    @media screen and (min-width: 768px) {
         width: 306px;
         padding: 49px 24px 77px 24px;
     }
-    @media screen and (min-width: 1200px){
+
+    @media screen and (min-width: 1200px) {
         width: 322;
         padding: 63px 24px;
         overflow-y: hidden;

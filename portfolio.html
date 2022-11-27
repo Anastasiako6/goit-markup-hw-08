@@ -20,7 +20,7 @@
     <header class="header">
         <div class="container header__cont">
             <nav class="nav">
-                <a class="logo navigation__logo link" href="./portfolio.html"><span class="logo__part">Web</span>Studio</a>
+                <a class="logo navigation__logo link" href="./index.html"><span class="logo__part">Web</span>Studio</a>
                 <ul class="menu list">
                     <li class="menu__item link">
                         <a class="menu__link link" href="./index.html"> Студія</a>
@@ -57,10 +57,10 @@
                 <div class="menu-top">
                     <ul class="mob-menu-list list">
                         <li class="mob-menu__item link">
-                            <a class="mob-menu__link link  mob-menu__link--current" href="./index.html"> Студія</a>
+                            <a class="mob-menu__link link" href="./index.html"> Студія</a>
                         </li>
                         <li class="mob-menu__item link">
-                            <a class="mob-menu__link link" href="./portfolio.html"> Портфоліо</a>
+                            <a class="mob-menu__link link mob-menu__link--current" href="./portfolio.html"> Портфоліо</a>
                         </li>
                         <li class="mob-menu__item link">
                             <a class="mob-menu__link link" href="Контакти"> Контакти</a>
@@ -69,13 +69,13 @@
                 </div>
                 <div class="menu-bottom">
                     <ul class="mob-communication list">
-                        <li class="mob-menu__item"><a class="mob-communication__item link" href="tel:+380961111111">+38 096
-                                111 11
-                                11</a></li>
-                        <li class="mob-menu__item"><a class="mob-communication__item mob-communication__mail link"
+                        <li class="mob-menu__item"><a class="mob-communication__item link"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="mob-menu__item"><a class="mob-communication__item link" href="tel:+380961111111">+38 096 111
+                                11
+                                11</a></li>
                     </ul>
-    
+        
                     <ul class="mob-soc list">
                         <li class="mob-soc-item "><a href="" class="mob-soc-link link"></a>Instagram</li>
                         <li class="mob-soc-item"><a href="" class="mob-soc-link link"></a>Twitter</li>
@@ -105,20 +105,13 @@
             
             <ul class="portfolio-cards list">
                 <li class="portf-cards">
-                    <a class="portf-link link" href="">
+                    <a class="link portf-link" href="">
                         <div class="portf-top-wrap">
                             <picture>
-                                <source srcset="
-                                    ./images/port-card1.jpg 1x, 
-                                    ./images/port-card1-2x.jpg 2x" media="(min-width: 1200px)" />
-                                <source srcset="
-                                    ./images/port-card1-tab.jpg 1x, 
-                                    ./images/port-card1-tab-2x.jpg 2x" media="(min-width: 768px)" />
-                                <source srcset="
-                                    ./images/port-card1-mob.jpg 1x, 
-                                    ./images/port-card1-2x.jpg 2x" media="(max-width: 768px)" />
-                            
-                                <img class="photo-cards" src="./images/port-card1.jpg" alt="Ноутбук з сайтом" width="450" height="294">
+                                <source srcset="./images/port-card1-mob.jpg 1x, ./images/port-card1-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="./images/port-card1-tab.jpg 1x, ./images/port-card1-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/port-card1.jpg 1x, ./images/port-card1-2x.jpg 2x" media="(min-width: 1200px)">
+                                <img class="photo-cards" src="./images/port-card1.jpg" alt="Ноутбук з сайтом" width="450">
                             </picture>
                             <p class="portf-top-text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -132,25 +125,18 @@
                 </li>
             
                 <li class="portf-cards">
-                    <a class="link portf-link" href="">
+                    <a class="portf-link link" href="">
                         <div class="portf-top-wrap">
                             <picture>
-                                <source srcset="
-                                    ./images/port-card2.jpg 1x, 
-                                    ./images/port-card2-2x.jpg 2x" media="(min-width: 1200px)" />
-                                <source srcset="
-                                    ./images/port-card2-tab.jpg 1x, 
-                                    ./images/port-card2-tab-2x.jpg 2x" media="(min-width: 768px)" />
-                                <source srcset="
-                                    ./images/port-card2-mob.jpg 1x, 
-                                    ./images/port-card2-2x.jpg 2x" media="(max-width: 768px)" />
-                            
-                                <img class="photo-cards" src="./images/port-card2.jpg" alt="Баскетболісти" width="370" height="294">
+                                <source srcset="./images/port-card2-mob.jpg 1x, ./images/port-card2-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="./images/port-card2-tab.jpg 1x, ./images/port-card2-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/port-card2.jpg 1x, ./images/port-card2-2x.jpg 2x" media="(min-width: 1200px)">
+                                <img class="photo-cards" src="./images/port-card2.jpg" alt="Ноутбук з сайтом" width="450">
                             </picture>
-                                <p class="portf-top-text">
-                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                                </p>
-                            </div>
+                            <p class="portf-top-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
                         <div class="text-pad">
                             <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
                             <p class="portfolio-text">Дизайн</p>
@@ -162,17 +148,10 @@
                     <a class="portf-link link" href="">
                         <div class="portf-top-wrap">
                             <picture>
-                                <source srcset="
-                                    ./images/port-card3.jpg 1x, 
-                                    ./images/port-card3-2x.jpg 2x" media="(min-width: 1200px)" />
-                                <source srcset="
-                                    ./images/port-card3-tab.jpg 1x, 
-                                    ./images/port-card3-tab-2x.jpg 2x" media="(min-width: 768px)" />
-                                <source srcset="
-                                    ./images/port-card3-mob.jpg 1x, 
-                                    ./images/port-card3-2x.jpg 2x" media="(max-width: 768px)" />
-                            
-                                <img class="photo-cards" src="./images/port-card3.jpg" alt="Лого ресторана" width="370" height="294">
+                                <source srcset="./images/port-card3-mob.jpg 1x, ./images/port-card3-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="./images/port-card3-tab.jpg 1x, ./images/port-card3-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/port-card3.jpg 1x, ./images/port-card3-2x.jpg 2x" media="(min-width: 1200px)">
+                                <img class="photo-cards" src="./images/port-card3.jpg" alt="Ноутбук з сайтом" width="450">
                             </picture>
                                 <p class="portf-top-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -189,17 +168,10 @@
                     <a class="portf-link link" href="">
                         <div class="portf-top-wrap">
                             <picture>
-                                <source srcset="
-                                    ./images/port-card4.jpg 1x, 
-                                    ./images/port-card4-2x.jpg 2x" media="(min-width: 1200px)" />
-                                <source srcset="
-                                    ./images/port-card4-tab.jpg 1x, 
-                                    ./images/port-card4-tab-2x.jpg 2x" media="(min-width: 768px)" />
-                                <source srcset="
-                                    ./images/port-card4-mob.jpg 1x, 
-                                    ./images/port-card4-2x.jpg 2x" media="(max-width: 768px)" />
-                            
-                                <img class="photo-cards" src="./images/port-card4.jpg" alt="Навушники" width="370" height="294">
+                                <source srcset="./images/port-card4-mob.jpg 1x, ./images/port-card4-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="./images/port-card4-tab.jpg 1x, ./images/port-card4-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/port-card4.jpg 1x, ./images/port-card4-2x.jpg 2x" media="(min-width: 1200px)">
+                                <img class="photo-cards" src="./images/port-card4.jpg" alt="Ноутбук з сайтом" width="450">
                             </picture>
                                 <p class="portf-top-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -216,17 +188,10 @@
                     <a class="portf-link link" href="">
                         <div class="portf-top-wrap">
                         <picture>
-                            <source srcset="
-                                ./images/port-card5.jpg 1x, 
-                                ./images/port-card5-2x.jpg 2x" media="(min-width: 1200px)" />
-                            <source srcset="
-                                ./images/port-card5-tab.jpg 1x, 
-                                ./images/port-card5-tab-2x.jpg 2x" media="(min-width: 768px)" />
-                            <source srcset="
-                                ./images/port-card5-mob.jpg 1x, 
-                                ./images/port-card5-2x.jpg 2x" media="(max-width: 768px)" />
-                        
-                            <img class="photo-cards" src="./images/port-card5.jpg" alt="Коробка" width="370" height="294">
+                            <source srcset="./images/port-card5-mob.jpg 1x, ./images/port-card5-mob-2x.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/port-card5-tab.jpg 1x, ./images/port-card5-tab-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/port-card5.jpg 1x, ./images/port-card5-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="photo-cards" src="./images/port-card5.jpg" alt="Ноутбук з сайтом" width="450">
                         </picture>
                                 <p class="portf-top-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -243,17 +208,10 @@
                     <a class="portf-link link" href="">
                         <div class="portf-top-wrap">
                             <picture>
-                                <source srcset="
-                                    ./images/port-card6.jpg 1x, 
-                                    ./images/port-card6-2x.jpg 2x" media="(min-width: 1200px)" />
-                                <source srcset="
-                                    ./images/port-card6-tab.jpg 1x, 
-                                    ./images/port-card6-tab-2x.jpg 2x" media="(min-width: 768px)" />
-                                <source srcset="
-                                    ./images/port-card6-mob.jpg 1x, 
-                                    ./images/port-card6-2x.jpg 2x" media="(max-width: 768px)" />
-                            
-                                <img class="photo-cards" src="./images/port-card6.jpg" alt="Екран комп'ютера" width="370" height="294">
+                                <source srcset="./images/port-card6-mob.jpg 1x, ./images/port-card6-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="./images/port-card6-tab.jpg 1x, ./images/port-card6-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/port-card6.jpg 1x, ./images/port-card6-2x.jpg 2x" media="(min-width: 1200px)">
+                                <img class="photo-cards" src="./images/port-card6.jpg" alt="Ноутбук з сайтом" width="450">
                             </picture>
                                 <p class="portf-top-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -270,17 +228,10 @@
                     <a class="portf-link link" href="">
                         <div class="portf-top-wrap">
                         <picture>
-                            <source srcset="
-                                ./images/port-card7.jpg 1x, 
-                                ./images/port-card7-2x.jpg 2x" media="(min-width: 1200px)" />
-                            <source srcset="
-                                ./images/port-card7-tab.jpg 1x, 
-                                ./images/port-card7-tab-2x.jpg 2x" media="(min-width: 768px)" />
-                            <source srcset="
-                                ./images/port-card7-mob.jpg 1x, 
-                                ./images/port-card7-2x.jpg 2x" media="(max-width: 768px)" />
-                        
-                            <img class="photo-cards" src="./images/port-card7.jpg" alt="Журнали" width="370" height="294">
+                            <source srcset="./images/port-card7-mob.jpg 1x, ./images/port-card7-mob-2x.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/port-card7-tab.jpg 1x, ./images/port-card7-tab-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/port-card7.jpg 1x, ./images/port-card7-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="photo-cards" src="./images/port-card7.jpg" alt="Ноутбук з сайтом" width="450">
                         </picture>
                                 <p class="portf-top-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -297,17 +248,10 @@
                     <a class="portf-link link" href="">
                         <div class="portf-top-wrap">
                             <picture>
-                                <source srcset="
-                                    ./images/port-card8.jpg 1x, 
-                                    ./images/port-card8-2x.jpg 2x" media="(min-width: 1200px)" />
-                                <source srcset="
-                                    ./images/port-card8-tab.jpg 1x, 
-                                    ./images/port-card8-tab-2x.jpg 2x" media="(min-width: 768px)" />
-                                <source srcset="
-                                    ./images/port-card8-mob.jpg 1x, 
-                                    ./images/port-card8-2x.jpg 2x" media="(max-width: 768px)" />
-                            
-                                <img class="photo-cards" src="./images/port-card8.jpg" alt="Лейбл" width="370" height="294">
+                                <source srcset="./images/port-card8-mob.jpg 1x, ./images/port-card8-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="./images/port-card8-tab.jpg 1x, ./images/port-card8-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/port-card8.jpg 1x, ./images/port-card8-2x.jpg 2x" media="(min-width: 1200px)">
+                                <img class="photo-cards" src="./images/port-card8.jpg" alt="Ноутбук з сайтом" width="450">
                             </picture>
                                 <p class="portf-top-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -324,17 +268,10 @@
                     <a class="portf-link link" href="">
                         <div class="portf-top-wrap">
                         <picture>
-                            <source srcset="
-                                ./images/port-card9.jpg 1x, 
-                                ./images/port-card9-2x.jpg 2x" media="(min-width: 1200px)" />
-                            <source srcset="
-                                ./images/port-card9-tab.jpg 1x, 
-                                ./images/port-card9-tab-2x.jpg 2x" media="(min-width: 768px)" />
-                            <source srcset="
-                                ./images/port-card9-mob.jpg 1x, 
-                                ./images/port-card9-2x.jpg 2x" media="(max-width: 768px)" />
-                        
-                            <img class="photo-cards" src="./images/port-card9.jpg" alt="Ноутбук" width="370" height="294">
+                            <source srcset="./images/port-card9-mob.jpg 1x, ./images/port-card9-mob-2x.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/port-card9-tab.jpg 1x, ./images/port-card9-tab-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/port-card9.jpg 1x, ./images/port-card9-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="photo-cards" src="./images/port-card9.jpg" alt="Ноутбук з сайтом" width="450">
                         </picture>
                                 <p class="portf-top-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.

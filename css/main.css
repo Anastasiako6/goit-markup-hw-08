@@ -1388,8 +1388,8 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  justify-content: left;
   align-items: center;
-  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .portfolio-cards .portf-cards {
@@ -1403,7 +1403,7 @@ body {
 }
 
 .portf-cards {
-  max-width: 450px;
+  display: flex;
   background: var(--primary-white-color);
   border: 1px solid #EEEEEE;
   transition: transform 250ms var(--cubic);
@@ -1425,7 +1425,11 @@ body {
 }
 
 .portf-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms var(--cubic);
+  flex-grow: 1;
 }
 
 .portf-link:hover,
@@ -1479,6 +1483,7 @@ body {
 .portf-top-text {
   position: absolute;
   top: 0;
+  padding: 63px 24px;
   height: 100%;
   padding: 77px 24px;
   transform: translateY(100%);
