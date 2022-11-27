@@ -1425,17 +1425,14 @@ body {
 }
 
 .portf-link {
-  display: flex;
-  flex-direction: column;
+  display: block;
   height: 100%;
   transition: box-shadow 250ms var(--cubic);
-  flex-grow: 1;
 }
 
 .portf-link:hover,
 .portf-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  display: block;
 }
 
 .portfolio-text-button {
@@ -1473,6 +1470,13 @@ body {
 .text-pad {
   padding: 20px 24px;
 }
+@media screen and (min-width: 768px) {
+  .text-pad {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
 
 /* ----------- */
 .portf-top-wrap {
@@ -1498,13 +1502,11 @@ body {
 }
 @media screen and (min-width: 768px) {
   .portf-top-text {
-    width: 306px;
     padding: 49px 24px 77px 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portf-top-text {
-    width: 322;
     padding: 63px 24px;
     overflow-y: hidden;
   }
