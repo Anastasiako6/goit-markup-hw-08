@@ -1213,7 +1213,7 @@ body {
   background-color: var(--accent-text-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .footer-container {
     display: flex;
     flex-direction: column;
