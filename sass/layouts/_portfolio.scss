@@ -65,8 +65,9 @@
 }
 
 .portf-link {
-    display: block;
+    display: flex;
     height: 100%;
+    flex-direction: column;
     transition: box-shadow 250ms var(--cubic);
 }
 
