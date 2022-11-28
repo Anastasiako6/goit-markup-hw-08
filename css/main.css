@@ -1118,6 +1118,7 @@ body {
 @media screen and (min-width: 1200px) {
   .address-footer {
     align-items: start;
+    margin-bottom: 0;
   }
 }
 
