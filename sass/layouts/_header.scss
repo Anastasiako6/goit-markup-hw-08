@@ -157,10 +157,13 @@
 }
 
 .mob-communication--tel{
-    font-size: 34px;
+    font-size: 28px;
     line-height: calc(40 / 34);
 
     color: var(--accent-text-color);
+    @media screen and (min-width: 480px){
+        font-size: 34px;
+    }
 }
 .mob-communication--mail{
     font-size: 24px;
@@ -190,7 +193,10 @@
 .mob-soc{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 50px;
+    @media screen and (min-width: 480px){
+        gap: 10px;
+    }
 }
 
 .mob-soc-item {

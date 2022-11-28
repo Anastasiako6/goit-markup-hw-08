@@ -229,13 +229,25 @@
            <div class="container">
             <h2 class="section-title padding-title">Чим ми займаємось</h2>
             <ul class="example list">
-                <li class="example__item"><img class="img" src="./images/box_1.jpg" alt="комп'ютер" width="370" height="294">
+                <li class="example__item">
+                    <picture>
+                        <source srcset="./images/box_1.jpg 1x, ./images/box_1-2х.jpg 2x" media="(min-width: 1200px)" />
+                        <img class="img" src="./images/box_1.jpg" alt="комп'ютер" width="370" height="294">
+                    </picture>
                     <p class="apps">Десктопні додатки</p>
                 </li>
-                <li class="example__item"><img class="img" src="./images/box_2.jpg" alt="телефон" width="370" height="294">
+                <li class="example__item">
+                    <picture>
+                        <source srcset="./images/box_2.jpg 1x, ./images/box_2-2х.jpg 2x" media="(min-width: 1200px)" />
+                        <img class="img" src="./images/box_2.jpg" alt="телефон" width="370" height="294">
+                    </picture>
                     <p class="apps">Мобільні додатки</p>
                 </li>
-                <li class="example__item"><img class="img" src="./images/box_3.jpg" alt="планшет" width="370" height="294">
+                <li class="example__item">
+                    <picture>
+                        <source srcset="./images/box_3.jpg 1x, ./images/box_3-2х.jpg 2x" media="(min-width: 1200px)" />
+                        <img class="img" src="./images/box_3.jpg" alt="планшет" width="370" height="294">
+                    </picture>
                     <p class="apps">Дизайнерські рішення</p>
                 </li>
             </ul>

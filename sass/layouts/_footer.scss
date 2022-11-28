@@ -7,6 +7,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 60px;
+    }
     @media screen and (min-width: 1200px) {
         align-items: start;
     }
@@ -20,13 +23,10 @@
 .logo-footer {
     margin-bottom: 28px;
     display: block;
-
+    font-size: 24px;
+    line-height: 1.16;
     font-family: 'Raleway';
     font-weight: 700;
-    @media screen and (min-width: 480px){
-        font-size: 24px;
-        line-height: 1.16;
-    }
     @media screen and (min-width: 1200px){
         font-size: 26px;
         line-height: 1.19;
@@ -152,17 +152,29 @@
 /* -----------footer----------- */
 
 .footer-input {
-    width: 358px;
+    margin-bottom: 10px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
-    padding-left: 16px;
+    padding: 1px 16px;
     color: var(--primary-white-color);
     transition-property: border, filter;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px){
+        margin-bottom: 0;
+        width: 358px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 480px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 }
 
 .footer-input::placeholder {
@@ -183,7 +195,10 @@
 }
 
 .input-footer-wrap {
-    display: flex;@media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 480px) {
         flex-direction: column;
     }
    
