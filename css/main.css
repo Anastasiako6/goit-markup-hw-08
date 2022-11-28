@@ -1431,6 +1431,7 @@ body {
 @media screen and (min-width: 768px) {
   .portfolio-cards .portf-cards {
     width: calc((100% - 30px) / 2);
+    height: 440px;
   }
 }
 @media screen and (min-width: 1200px) {
